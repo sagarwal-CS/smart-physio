@@ -27,7 +27,7 @@ Then, install this module from pypi using pip3:
 pip3 install face_recognition
 ```
 
-### Download pre-trained model files
+#### Download pre-trained model files
 
 ```python
 cd models/mpii
