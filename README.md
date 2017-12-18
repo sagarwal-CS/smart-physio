@@ -10,16 +10,26 @@ For more information visit http://pose.mpi-inf.mpg.de
 
 ## SETUP
 
-Python 3 is required to run this code. First of all, you should install TensorFlow as described in the official documentation. We recommended to use virtualenv.
+#### Python 3 is required to run this code. First of all, you should install TensorFlow as described in the official documentation.
 
 You will also need to install the following Python packages:
 
-```python
+```
 pip3 install scipy scikit-image matplotlib pyyaml easydict cython munkres
 ```
+#### Install face recognition api for python:
+
+First, make sure you have dlib already installed with Python bindings:
+[How to install dlib from source on macOS or Ubuntu](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf)
+Then, install this module from pypi using pip3:
 
 ```python
-# Download pre-trained model files
+pip3 install face_recognition
+```
+
+### Download pre-trained model files
+
+```python
 cd models/mpii
 ./download_models.sh
 cd -
